@@ -42,3 +42,19 @@
 - Check firewall rules and priorities
 - Validate DNS and application connectivity
 - Review Cloud Router and BGP when applicable
+
+## Cloud Router
+- Name: enterprise-sre-router
+- Network: enterprise-sre-vpc
+- Region: us-east4
+- Private ASN: 64514
+- Dynamic Routing Mode: Regional
+- Purpose: Dynamic routing and Cloud NAT configuration
+- BGP Peers: Not configured
+
+## Cloud Router Troubleshooting
+- Validate router configuration
+- Check BGP session status
+- Review learned and advertised routes
+- Validate VPN and Interconnect connectivity
+- Investigate route withdrawals
