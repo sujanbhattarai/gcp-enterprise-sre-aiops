@@ -244,3 +244,13 @@ __pycache__/
 
 # Kubernetes
 kubeconfig
+
+# Python and AI automation
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+diagnostic_report.json
+ai_analysis.txt

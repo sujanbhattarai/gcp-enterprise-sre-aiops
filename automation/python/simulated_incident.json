@@ -1,0 +1,20 @@
+{
+    "hostname": "lab-vm",
+    "environment": "development",
+    "simulation": true,
+    "metrics": {
+        "cpu": {
+            "utilization": 96.0,
+            "status": "CRITICAL"
+        },
+        "memory": {
+            "utilization": 92.0,
+            "status": "CRITICAL"
+        },
+        "disk": {
+            "utilization": 87.0,
+            "status": "WARNING"
+        }
+    },
+    "overall_status": "CRITICAL"
+}
