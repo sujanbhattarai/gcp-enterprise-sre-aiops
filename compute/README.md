@@ -32,3 +32,25 @@
 ## Implementation Status
 - Architecture designed
 - VM deployment pending
+
+## Machine Type Selection
+- Machine family: E2
+- Initial machine type: e2-small
+- Virtual CPUs: 2 shared-core
+- Memory: 2 GiB
+- Operating system: Ubuntu 24.04 LTS
+- Boot disk: 10 GB standard persistent disk
+- Provisioning model: Standard
+
+## Cost Optimization
+- On-demand pricing
+- Stop VMs when not performing labs
+- Delete unused disks and external IPs
+- Avoid oversized machine types
+- Monthly project budget target: $50
+
+## Scaling Strategy
+- Vertical scaling for resource constraints
+- Horizontal scaling using Managed Instance Groups
+- Autoscaling based on workload demand
+- Monitoring-driven capacity planning
