@@ -58,3 +58,27 @@
 - Review learned and advertised routes
 - Validate VPN and Interconnect connectivity
 - Investigate route withdrawals
+
+## VPC Network Peering
+- Primary VPC: enterprise-sre-vpc
+- Partner VPC: partner-services-vpc
+- Partner Subnet: 10.40.1.0/24
+- Region: us-east4
+- Peering: enterprise-to-partner
+- Reverse Peering: partner-to-enterprise
+- Purpose: Private cross-VPC communication
+
+## VPC Peering Design Principles
+- Non-overlapping subnet IP ranges
+- Matching peering configurations
+- Non-transitive connectivity
+- Independent firewall management
+- Private IP communication
+
+## VPC Peering Troubleshooting
+- Validate peering connection status
+- Check subnet CIDR overlap
+- Review exchanged routes
+- Validate source and destination firewall rules
+- Investigate DNS resolution
+- Review application connectivity
