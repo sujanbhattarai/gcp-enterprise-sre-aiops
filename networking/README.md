@@ -28,3 +28,17 @@
 - Cloud DNS
 - Private Service Connect
 - Terraform automation
+
+## VPC Routing
+- System-generated subnet routes
+- Default IPv4 internet route
+- Regional dynamic routing mode
+- Primary and secondary subnet routes
+- No custom static routes required initially
+
+## Routing Troubleshooting
+- Validate destination IP and CIDR
+- Review applicable routes and next hops
+- Check firewall rules and priorities
+- Validate DNS and application connectivity
+- Review Cloud Router and BGP when applicable
