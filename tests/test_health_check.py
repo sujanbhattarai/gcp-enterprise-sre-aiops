@@ -18,3 +18,18 @@ from health_utils import check_health
 )
 def test_check_health(value, warning, critical, expected):
     assert check_health(value, warning, critical) == expected
+
+
+@pytest.mark.parametrize(
+    "value, warning, critical, expected",
+    [
+        (0, 70, 90, "HEALTHY"),
+        (100, 70, 90, "CRITICAL"),
+        (69.9, 70, 90, "HEALTHY"),
+        (70.1, 70, 90, "WARNING"),
+        (89.9, 70, 90, "WARNING"),
+        (90.1, 70, 90, "CRITICAL"),
+    ]
+)
+def test_boundary_conditions(value, warning, critical, expected):
+    assert check_health(value, warning, critical) == expected
